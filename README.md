@@ -30,3 +30,7 @@ print u8v
 print "uint8 %d" % example.average_u8(u8v)
 
 ```
+
+`Linux ubuntu 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux`
+`gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4)`
+`Python 2.7.12`
