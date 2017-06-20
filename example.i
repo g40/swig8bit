@@ -17,9 +17,10 @@
 %}
 
 //
-%apply (char* INPLACE_ARRAY1, int DIM1) {(char* buffer, int bytes)}
-%apply (unsigned char* INPLACE_ARRAY1, int DIM1) {(unsigned char* buffer, int bytes)}
-%apply (int* INPLACE_ARRAY1, int DIM1) {(int* buffer, int bytes)}
+%apply (int* INPLACE_ARRAY1,int DIM1) {(int* buffer,int bytes)}
+%apply (int a1,int a2,int* INPLACE_ARRAY1,int DIM1) {(int a1,int a2,int* buffer,int bytes)}
+%apply (char* INPLACE_ARRAY1,int DIM1) {(char* buffer,int bytes)}
+%apply (unsigned char* INPLACE_ARRAY1,int DIM1) {(unsigned char* buffer,int bytes)}
 
 // Include the header file with above prototypes
 %include "example.h"
