@@ -17,9 +17,9 @@
 %}
 
 //
-%apply (char* INPLACE_ARRAY1, int DIM1) {(char* seq, int n)}
-%apply (unsigned char* INPLACE_ARRAY1, int DIM1) {(unsigned char* seq, int n)}
-%apply (int* INPLACE_ARRAY1, int DIM1) {(int* seq, int n)}
+%apply (char* INPLACE_ARRAY1, int DIM1) {(char* buffer, int bytes)}
+%apply (unsigned char* INPLACE_ARRAY1, int DIM1) {(unsigned char* buffer, int bytes)}
+%apply (int* INPLACE_ARRAY1, int DIM1) {(int* buffer, int bytes)}
 
 // Include the header file with above prototypes
 %include "example.h"
